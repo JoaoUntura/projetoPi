@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Clientes</h2>
+        <form id="form-cliente" class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4}-\d{4}" required placeholder="(XX) XXXX-XXXX">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <div class="buttons">
+                <button type="submit">Salvar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+        <div id="feedback"></div>
+    </div>
+    <div class="voltar">
+        <a href="index.html">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>
